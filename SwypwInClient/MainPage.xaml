@@ -20,14 +20,17 @@
                       RelativePanel.Below="name">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:ChatMessage">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock>
+                        <RelativePanel Margin="0,0,0,10">
+                            <TextBlock TextWrapping="Wrap" 
+                                       RelativePanel.AlignLeftWithPanel="True"
+                                       RelativePanel.AlignRightWithPanel="True"
+                                       Margin="5,5,5,5">
                         <Run Text="{x:Bind Username}" Foreground="Black"/>
                         <Run Text=": "/>
                         <Run Text="{x:Bind Message}" Foreground="Black"/>
                             </TextBlock>
 
-                        </StackPanel>
+                        </RelativePanel>
                     </DataTemplate>
 
                 </ListView.ItemTemplate>

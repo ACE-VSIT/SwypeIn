@@ -40,18 +40,8 @@ namespace SwypwInClient
 
         private async void OnMessage(ChatMessage msg)
         {
-            await Windows.ApplicationModel.Core.CoreApplication.MainView.Dispatcher.RunAsync(
-                CoreDispatcherPriority.Normal, () => { SwypeChat.Messages.Add(msg);
-                });
+            await Windows.ApplicationModel.Core.CoreApplication.MainView.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { SwypeChat.Messages.Add(msg); });
         }
-        
-        
-        
-        
-        
-        // ************************************************************************************************************************************************************//
-        //                                                                      SignalR Code above
-        // ************************************************************************************************************************************************************//
 
 
 

@@ -1,0 +1,16 @@
+In this version of client side code
+
+Only Messages are being sent to the Server
+UI has almost no problems at all.
+
+But application will always crash at first use. 
+
+Like using first time after opening system and that
+can be annoying
+
+Also, I will have to publish changes in server code in order
+to make this thing work
+
+Still, keep it here for reference. Do NOT delete it assuming 
+that you don't need it. That is unless you have understood 
+SignalR and can make apps based on that on your own
